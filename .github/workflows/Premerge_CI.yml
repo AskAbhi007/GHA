@@ -1,0 +1,26 @@
+name: First_GITHUB ACTION CODE
+
+on: 
+  pull_request:
+    branches:
+      - main
+  
+  push:
+    branches:
+      - main
+
+jobs:
+  My_build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Set up python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.13'
+          
+
+
+
