@@ -11,6 +11,7 @@ on:
 
 env:
   python-version: '3.13'
+  secrets-value: ${{ secrets.MY_SECRETS }}
 
 jobs:
   My_build:
