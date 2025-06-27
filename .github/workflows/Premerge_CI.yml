@@ -9,6 +9,9 @@ on:
     branches:
       - main
 
+env:
+  python-version: '3.13'
+
 jobs:
   My_build:
     runs-on: ubuntu-latest
@@ -19,8 +22,9 @@ jobs:
       - name: Set up python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.13'
-          
+          python-version: ${{ env.python-version }}
+
+
 
 
 
